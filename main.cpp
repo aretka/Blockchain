@@ -132,7 +132,7 @@ int main()
     Blockchain.push_back(newBlock);
 
     //Blockchain[0].Transactions.push_back(addTransaction());
-    //Blockchain.push_back(mineBlock(Blockchain.back()));
+    Blockchain.push_back(mineBlock(Blockchain.back()));
 
     return 0;
 }
