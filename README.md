@@ -1,12 +1,12 @@
 # Supaprastintos blokų grandinės (blockchain) kūrimas
 ## Duomenims saugoti naudojamos struktūros
-User
+### User
   struct User {
       string name;
       string public_key;
       int balance;
   };
-Transaction
+### Transaction
   struct Transaction {
       string transactionID;
       string sender_public_key;
@@ -14,7 +14,7 @@ Transaction
       bool ifSuccessful;
       int amount;
   };
-Block
+### Block
   struct Block {
   // Block Header
       string prevHash, minedBlockHash;
