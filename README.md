@@ -27,4 +27,4 @@
         vector<Transaction> Transactions;
     }
  ## Programos veikimas
- Programa nuskaito sukurtus naudotojus bei transakcijas. Paleidžiamas kasimo procesas kurio metu keičiant nonce reikšmę yra ieškomas hash su tam tikru difficultyTarget verte(mano projekte ieškau 3 pirmus vienetus). Tada po 100 transakcijų yra įdedama į naują bloką ir taip vykdomas procejas kol į blokus įdedamos visos transakcijos.
+ Programa nuskaito sukurtus naudotojus bei transakcijas. Paleidžiamas kasimo procesas, kurio metu keičiant nonce reikšmę yra ieškomas hash su tam tikru difficultyTarget verte(mano projekte ieškau 3 pirmus vienetus) ir taip sukuriamas naujas blokas. Tada po 100 transakcijų yra įdedama į naują bloką ir taip vykdomas procejas kol į blokus įdedamos visos transakcijos. Įdėjus transakcijas yra sudaromas merkelRootHash, kuris yra sudaromas suhashuojant visų transakcijų ID.
