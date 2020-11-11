@@ -194,6 +194,25 @@ int main()
         Transactions.erase(itr1, itr2);
         Blockchain[i].merkelRootHash = hashFunction(merkelData);
     }
+
+    ofstream merkelOut("merkelHashes.txt");
+    for (int i=0; i<100; i++) {
+        merkelOut << Blockchain[i].merkelRootHash <<'\n';
+    }
+
+    ofstream usersOut("usersOut.txt");
+    for (int i=0; i<1000; i++) {
+        usersOut << Users[i].balance << '\n';
+    }
+
+    ofstream blockTransactionsOut("bTXS.txt");
+    for (int i=0; i<100; i++) {
+        blockTransactionsOut << "Block " << i+1 << '\n';
+        for (int ii=0; ii<100; ii++) {
+            blockTransactionsOut << Blockchain[i].Transactions[ii].transactionID <<'\n';
+        }
+    }
+
     return 0;
 }
 
