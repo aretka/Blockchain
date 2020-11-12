@@ -224,7 +224,6 @@ int main()
             }
         }
 
-
         // deleting
         itr1 = Transactions.begin();
         itr2 = Transactions.begin() + 100;
