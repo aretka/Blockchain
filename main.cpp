@@ -259,12 +259,13 @@ int main()
         Transactions.erase(itr1, itr2);
     }
 
+/*
     ofstream merkelOut("merkelHashes.txt");
     for (int i=0; i<5; i++) {
         merkelOut << Blockchain[i].merkelRootHash <<'\n';
     }
     merkelOut.close();
-
+*/
     return 0;
 }
 
